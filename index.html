@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+
+    <!-- Playfair Display Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            cursor: url('cursor.png') 0 0, auto;
+        }
+        button, a {
+            cursor: url('cursor.png') 0 0, pointer;
+        }
+
+        body{
+            margin-top:60px;
+            margin:0;
+            height:100vh;
+            background:black;
+            overflow:hidden;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            font-family: 'Playfair Display', serif;
+            position:relative;
+        }
+
+        .stars{
+           position:absolute;
+           width:100%;
+           height:100%;
+           z-index:0;
+           pointer-events:none;   
+        }
+
+
+        .stars span{
+           position:absolute;
+           border-radius:50%;
+           background:white;
+           opacity:0.8;
+           animation: twinkle 3s infinite ease-in-out;
+        }
+
+        /* Small stars */
+        .small{
+           width:2px;
+           height:2px;
+        }
+
+/* Medium stars */
+.medium{
+    width:4px;
+    height:4px;
+}
+
+/* Big stars */
+.big{
+    width:6px;
+    height:6px;
+}
+
+
+/* different speeds & delays */
+.stars span:nth-child(1){ animation-delay:0s;  animation-duration:3s; }
+.stars span:nth-child(2){ animation-delay:1s;  animation-duration:4s; }
+.stars span:nth-child(3){ animation-delay:2s;  animation-duration:5s; }
+.stars span:nth-child(4){ animation-delay:0.5s;animation-duration:3.5s; }
+.stars span:nth-child(5){ animation-delay:1.5s;animation-duration:4.5s; }
+.stars span:nth-child(6){ animation-delay:2.5s;animation-duration:3.2s; }
+.stars span:nth-child(7){ animation-delay:0.8s;animation-duration:4.2s; }
+.stars span:nth-child(8){ animation-delay:1.8s;animation-duration:5.2s; }
+.stars span:nth-child(9){ animation-delay:2.8s;animation-duration:3.8s; }
+
+
+        @keyframes twinkle{
+    0%,100%{opacity:0.3;}
+    50%{opacity:1;}
+    }
+
+
+        h1{
+            font-size:48px;
+            margin-bottom:20px;
+            z-index:1;
+        }
+
+        p{
+            font-size:22px;
+            margin-bottom:35px;
+            z-index:1;
+        }
+
+        button{
+    padding:14px 32px;
+    font-size:24px;   /* bigger text */
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    background:white;
+    color:black;
+}
+
+
+        button:hover{
+            opacity:0.85;
+        }
+        .navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:black;
+    padding:12px 0;
+    text-align:center;
+    z-index:1000;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+    font-family: Arial, sans-serif;
+}
+
+.navbar a:hover{
+    text-decoration:underline;
+}
+.start-btn{
+    display:inline-block;
+    padding:14px 32px;
+    font-size:24px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:20px;
+}
+
+.start-btn:hover{
+    opacity:0.85;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="stars">
+    <span class="small" style="top:5%; left:10%;"></span>
+    <span class="medium" style="top:12%; left:80%;"></span>
+    <span class="small" style="top:30%; left:5%;"></span>
+    <span class="big" style="top:70%; left:90%;"></span>
+    <span class="medium" style="top:85%; left:15%;"></span>
+    <span class="small" style="top:40%; left:95%;"></span>
+    <span class="big" style="top:60%; left:2%;"></span>
+    <span class="medium" style="top:90%; left:60%;"></span>
+    <span class="small" style="top:15%; left:50%;"></span>
+
+    <span class="medium" style="top:25%; left:35%;"></span>
+    <span class="small" style="top:45%; left:20%;"></span>
+    <span class="big" style="top:55%; left:75%;"></span>
+    <span class="medium" style="top:35%; left:65%;"></span>
+    <span class="small" style="top:10%; left:30%;"></span>
+    <span class="big" style="top:80%; left:40%;"></span>
+    <span class="medium" style="top:50%; left:85%;"></span>
+    <span class="small" style="top:65%; left:55%;"></span>
+    <span class="big" style="top:20%; left:92%;"></span>
+    <span class="medium" style="top:75%; left:8%;"></span>
+</div>
+
+
+
+<div>
+    <h1>Every artwork has a story</h1>
+    <p>Let me help you price it the way it deserves.</p>
+
+    <a href="form.html" class="start-btn">Start Pricing</a>
+
+</div>
+<!-- <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="form.html">Add Artwork</a>
+    <a href="history.php">Gallery</a>
+</div> -->
+</body>
+
+
+</html>
+
+
