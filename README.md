@@ -4,7 +4,7 @@ The Problem:
 Many artists struggle to determine a fair price for their artwork. Pricing is often inconsistent and subjective, depending on factors like time spent, material cost, skill level, and complexity.
 This project solves that problem by providing a structured and logical pricing system that helps artists calculate a suggested price based on these factors.
 
-Tech Stack: 
+Tech Stack- 
 Frontend: HTML, CSS
 Backend: PHP
 Database: MySQL
@@ -19,7 +19,6 @@ Key Features:
     Suggested Price = Base Price × Complexity Multiplier
     -> Hourly rate is assigned based on experience level
     -> Multiplier is applied based on complexity
-    
 --> Gallery view of all artworks
 --> Search artworks by name
 --> Delete artworks with confirmation
