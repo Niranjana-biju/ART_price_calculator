@@ -5,9 +5,13 @@ Many artists struggle to determine a fair price for their artwork. Pricing is of
 This project solves that problem by providing a structured and logical pricing system that helps artists calculate a suggested price based on these factors.
 
 Tech Stack: 
+
 Frontend: HTML, CSS
+
 Backend: PHP
+
 Database: MySQL
+
 Server Environment: XAMPP (Apache)
 
 Key Features: 
